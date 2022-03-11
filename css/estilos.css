@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+.header {
+    height: 0px;
+}
+.header__logo {
+    height: 160px;
+    width: 160px;
+}
+.header__logo img {
+    height: 100%;
+}
+.fila {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+.van {
+    background-image: url(../imagenes/camio.jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.frase {
+    text-align: center;
+    line-height: 1.4;
+    background-color: rgb(203, 204, 195);
+    padding: 40px;
+}
+.oracion1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.oracion2 {
+    text-decoration: overline;
+    font-size: 60px;
+}
+.oracion3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(189, 66, 131);
+}
+.novedades {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+}
+.suscribite {
+    width: 130px;
+    border-style: unset;
+    height: 22px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.boton {
+    width: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: black;
+    border-color: black;
+    color: whitesmoke;
+    border-radius: 40px;
+    height: 28px;
+}
+.menu {
+    height: 100px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    position: relative;
+}
+.menu__contenedor {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+.menu__marca {
+    height: 100px;
+    width: 100px;
+}
+.menu__marca img {
+    height: 100%;
+}
+.nav__lista {
+    display: flex;
+}
+.nav__item {
+    margin-left: 2.5rem;
+}
+.nav__enlace {
+    color: rgb(226, 46, 142) ;
+    text-decoration: none;
+    letter-spacing: 0.05cm;
+    font-size: 20px;
+}
+.quiensoy {
+    background-color: rgb(203, 204, 195);
+    height: 700px;
+}
+.quiensoy__contenedor {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+.quiensoy__texto {
+    font-size: 23px;
+    letter-spacing: 0.06cm;
+    text-align: center;
+    margin: 2.5cm;
+    padding: 0.5cm;
+}
+.quiensoy img {
+    height: 650px;
+    border-radius: 70px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "logo centro novedades";
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    height: 120px;
+}
+.footer__logo {
+    grid-area: logo;
+    height: 100px;
+    width: 100px;
+}
+
+.footer__logo img {
+    height: 100%;
+}
+.footer__centro {
+    grid-area: centro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__novedades {
+    grid-area: novedades;
+}
+.viajes__paises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.arg {
+    grid-area: arg;
+    justify-self: end;
+    position: relative;
+    padding-bottom: 40px;
+}
+.arg h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm;
+}
+.col {
+    grid-area: col;
+    position: relative;
+}
+.col h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm;
+}
+.esp {
+    grid-area: esp;
+    justify-self: start;
+    position: relative;
+}
+.esp h1{
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm;
+}
+.ing {
+    grid-area: ing;
+    justify-self: end;
+    position: relative;
+}
+.ing h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm;
+}
+.ita {
+    grid-area: ita;
+    position: relative;
+}
+.ita h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm;
+}
+.per {
+    grid-area: per;
+    justify-self: start;
+    position: relative;
+}
+.per h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm;
+}
+.viajes__fotos {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.viajes__info {
+    padding: 20px;
+}
+.viajes__titulo {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.1cm;
+    font-size: 30px;
+}
+.viajes__paises h1 {
+    text-align: center;
+}
+
+.servicios__paquetes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "uno vht"
+        "dos itinerario"
+        "tres full";
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.vht {
+    grid-area: vht;
+}
+.itinerario {
+    grid-area: itinerario;
+}
+.full {
+    grid-area: full;
+}
+.uno {
+    grid-area: uno;
+    text-align: right;
+}
+.uno p {
+    font-size: 22px;
+    color: antiquewhite;
+}
+.uno h1 {
+    font-size: 60px;
+    letter-spacing: 0.3cm;
+    color: rgba(238, 154, 28, 0.76);
+}
+.dos {
+    grid-area: dos;
+    text-align: right;
+}
+.dos p {
+    font-size: 22px;
+    color: antiquewhite;
+}
+.dos h1 {
+    font-size: 60px;
+    letter-spacing: 0.3cm;
+    color: rgba(229, 153, 229, 0.767);
+}
+.tres {
+    grid-area: tres;
+    text-align: right;
+}
+.tres p {
+    font-size: 22px;
+    color: antiquewhite;
+}
+.tres h1 {
+    font-size: 60px;
+    letter-spacing: 0.3cm;
+    color: rgba(255, 192, 203, 0.76);
+}
+.servicios__charlemos {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.charlemos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.charlemos h2 {
+    font-size: 42px;
+    letter-spacing: 0.2cm;
+    padding-bottom: 40px;
+}
+.charlemos h3 {
+    font-size: 30px;
+    letter-spacing: 0.15cm;
+    padding-bottom: 20px;
+}
+.form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: left;
+}
+.form__row {
+    display: flex;
+}
+.form__boton {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 30px;
+}
+.aceptar {
+    font-size: 15px;
+    height: 40px;
+    width: 85px;
+    background-color: black;
+    border-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 70px
+}
+.servicios__fondo {
+    background-image: url(../imagenes/girl.jpg);
+    width: 100%;
+    height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fondo {
+    display: grid;
+    height: 700px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "recuadro no"
+        "iconos iconos";
+}
+.recuadro {
+    grid-area: recuadro;
+    display: flex;
+}
+.iconos {
+    grid-area: iconos;
+    display: flex;
+}
+.area {
+    margin-left: 5px;
+    margin-top: 5px;
+    border-style: hidden;
+    background-color: rgb(227, 219, 231);
+    border-radius: 2px;    
+}
+.nombre {
+    margin-left: 5px;
+}
+.enviar {
+    margin-left: 5px;
+    width: 65px;
+    font-size: 15px;
+    background-color: black;
+    border-color: black;
+    color:rgb(227, 219, 231);
+    height: 28px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.h2 {
+    margin-right: 40px;
+}
+.tit {
+    margin-right: 40px;
+}
+.icons {
+    padding-right: 30px;
+}
+.nombre__name {
+    padding-right:2px;
+    font-size: 17px;
+    letter-spacing: 0.02cm;
+}
+.completar {
+    width: 220px;
+    height: 20px;
+    border-style: hidden;
+    background-color: rgb(227, 219, 231);
+    border-radius: 2px;
+}
+.back {
+    background-image: url(../imagenes/punti.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Media Queries */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .menu {
+        height: auto;
+    }
+    .menu__contenedor {
+        flex-direction: column;
+    }
+    .footer {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .quiensoy__contenedor {
+        flex-direction: column;
+    }
+    .quiensoy__contenedor img {
+        width: auto;
+        padding-bottom: 20px;
+    }
+    .quiensoy {
+        height: auto;
+    }
+    .servicios__paquetes {
+        max-width: auto;
+        height: auto;
+    }
+    .servicios__fondo {
+        background-image: url(../imagenes/girl.jpg);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fondo {
+        height: auto;
+        padding: 50px;
+    }
+    .iconos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .nav__lista {
+        flex-wrap: wrap;
+    }
+    .quiensoy__contenedor img {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .footer__centro {
+        flex-wrap: wrap;
+        padding-right: 5px;
+    }
+    .footer {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .suscribite {
+        width: 80px;
+    }
+    .arg img , .col img , .esp img , .ing img , .ita img , .per img {
+        max-width: 310px;
+    }
+    .servicios__paquetes {
+        display: flex;
+        flex-direction: column;
+        max-width: auto;
+        height: auto;
+        padding: 30px;
+    }
+    .servicios__fondo {
+        background-image: url(../imagenes/girl.jpg);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fondo {
+        height: auto;
+        padding: 10px;
+    }
+    .iconos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .recuadro {
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+}
+
+
+
+
