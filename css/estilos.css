@@ -28,7 +28,7 @@ body {
     height: 100%;
     align-items: center;
 }
-.link {
+#link {
     text-decoration: none;
     color: whitesmoke;
     line-height: 1.5;
@@ -110,7 +110,7 @@ ul {
 .nav__item {
     margin-left: 2.5rem;
 }
-.nav__enlace {
+#nav__enlace {
     color: rgb(226, 46, 142) ;
     text-decoration: none;
     letter-spacing: 0.05cm;
@@ -118,24 +118,25 @@ ul {
 }
 .quiensoy {
     background-color: rgb(203, 204, 195);
-    height: 700px;
+    height: auto;
 }
 .quiensoy__contenedor {
     display: flex;
-    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
     align-items: center;
+    max-width: 1200px;
 }
 .quiensoy__texto {
     font-size: 23px;
     letter-spacing: 0.06cm;
     text-align: center;
-    margin: 2.5cm;
-    padding: 0.5cm;
+    padding: 1.8cm;
+    width: 100%;
+    height: 100%;
 }
 .quiensoy img {
-    height: 650px;
+    height: auto;
     border-radius: 70px;
 }
 .footer {
