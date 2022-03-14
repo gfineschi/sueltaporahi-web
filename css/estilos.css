@@ -62,6 +62,10 @@ body {
 .novedades {
     font-size: 18px;
     letter-spacing: 0.9px;
+    margin-bottom: 0px;
+}
+#giu {
+    margin-bottom: 0px;
 }
 .suscribite {
     width: 130px;
@@ -173,6 +177,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
+    padding-left: 0px;
 }
 .arg {
     grid-area: arg;
@@ -189,11 +194,12 @@ ul {
     top: 40%;
     letter-spacing: 0.1cm;
 }
-.col {
+#col {
     grid-area: col;
     position: relative;
+    padding-bottom: 40px;
 }
-.col h1 {
+#col h1 {
     position: absolute;
     color: rgba(240, 255, 255, 0.829);
     width: 100%;
@@ -206,6 +212,7 @@ ul {
     grid-area: esp;
     justify-self: start;
     position: relative;
+    padding-bottom: 40px;
 }
 .esp h1{
     position: absolute;
@@ -220,6 +227,7 @@ ul {
     grid-area: ing;
     justify-self: end;
     position: relative;
+    padding-bottom: 40px;
 }
 .ing h1 {
     position: absolute;
@@ -233,6 +241,7 @@ ul {
 .ita {
     grid-area: ita;
     position: relative;
+    padding-bottom: 40px;
 }
 .ita h1 {
     position: absolute;
@@ -259,7 +268,7 @@ ul {
 }
 .viajes__fotos {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .viajes__info {
     padding: 20px;
@@ -347,8 +356,8 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 .charlemos h2 {
     font-size: 42px;
@@ -394,51 +403,34 @@ ul {
     background-repeat: no-repeat;
 }
 .fondo {
-    display: grid;
-    height: 700px;
-    align-items: center;
-    justify-items: center;
+    display: flex;
     margin: 0 auto;
     max-width: 1200px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "recuadro no"
-        "iconos iconos";
+    flex-direction: column;
+    align-items: center;
 }
 .recuadro {
-    grid-area: recuadro;
     display: flex;
+    align-items: center;
+    padding-bottom: 20px;
 }
 .iconos {
-    grid-area: iconos;
     display: flex;
 }
 .area {
-    margin-left: 5px;
-    margin-top: 5px;
-    border-style: hidden;
-    background-color: rgb(227, 219, 231);
-    border-radius: 2px;    
+    border-color: black;
+    background-color: rgba(227, 219, 231, 0);
+    border-radius: 2px;
+    margin-bottom: 5px;
+    text-decoration: black;
 }
 .nombre {
-    margin-left: 5px;
-}
-.enviar {
-    margin-left: 5px;
-    width: 65px;
-    font-size: 15px;
-    background-color: black;
-    border-color: black;
-    color:rgb(227, 219, 231);
-    height: 28px;
-    cursor: pointer;
-    border-radius: 2px;
-}
-.h2 {
-    margin-right: 40px;
+    margin-bottom: 2px;
 }
 .tit {
+    margin-right: 40px;
+}
+.h2 {
     margin-right: 40px;
 }
 .icons {
@@ -450,16 +442,34 @@ ul {
     letter-spacing: 0.02cm;
 }
 .completar {
-    width: 220px;
-    height: 20px;
-    border-style: hidden;
-    background-color: rgb(227, 219, 231);
+    border-color: black;
+    background-color: rgba(227, 219, 231, 0);
     border-radius: 2px;
+    margin-bottom: 4px;
+    width: 250px;
+    height: 20px;
+}
+.form2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 .back {
     background-image: url(../imagenes/punti.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cita {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(151, 44, 101);
+}
+.cita2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(151, 44, 101);
 }
 
 
@@ -532,7 +542,7 @@ ul {
     .suscribite {
         width: 80px;
     }
-    .arg img , .col img , .esp img , .ing img , .ita img , .per img {
+    .arg img , #col img , .esp img , .ing img , .ita img , .per img {
         max-width: 310px;
     }
     .servicios__paquetes {
