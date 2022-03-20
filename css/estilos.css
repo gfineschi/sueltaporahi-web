@@ -46,6 +46,7 @@ body {
     background-color: rgb(203, 204, 195);
     padding: 40px;
 }
+
 .oracion1 {
     font-size: 30px;
     letter-spacing: 5px;
@@ -179,6 +180,24 @@ ul {
     justify-content: space-evenly;
     padding-left: 0px;
 }
+.arg:hover .overlay {
+    opacity: 1;
+}
+#col:hover .overlay {
+    opacity: 1;
+}
+.ita:hover .overlay {
+    opacity: 1;
+}
+.ing:hover .overlay {
+    opacity: 1;
+}
+.per:hover .overlay {
+    opacity: 1;
+}
+.esp:hover .overlay {
+    opacity: 1;
+}
 .arg {
     grid-area: arg;
     justify-self: end;
@@ -256,6 +275,7 @@ ul {
     grid-area: per;
     justify-self: start;
     position: relative;
+    padding-bottom: 40px
 }
 .per h1 {
     position: absolute;
@@ -266,6 +286,44 @@ ul {
     top: 40%;
     letter-spacing: 0.1cm;
 }
+.overlay {
+    background-color: rgba(253, 249, 243, 0.808);
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0%, -100%);
+    transition: 0.5s ease;
+    position: relative;
+}
+.overlay h2 {
+    text-decoration: underline;
+    font-size: 1.2 rem;
+    text-align: center;
+    color: rgb(226, 46, 142);
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay h5 {
+    font-size: 1 rem;
+    text-align: center;
+    color: rgb(182, 134, 159);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .viajes__fotos {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -464,12 +522,12 @@ ul {
 .cita {
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: rgb(151, 44, 101);
+    background-color:  rgb(182, 134, 159);
 }
 .cita2 {
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: rgb(151, 44, 101);
+    background-color: rgb(182, 134, 159);
 }
 
 
@@ -570,6 +628,12 @@ ul {
     .recuadro {
         flex-wrap: wrap;
         margin-top: 5px;
+    }
+    .overlay p {
+        font-size: 0.8rem;
+    }
+    .overlay h5 {
+        top: 22%;
     }
 
 }

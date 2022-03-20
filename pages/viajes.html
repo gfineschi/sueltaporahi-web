@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -46,27 +47,101 @@
     <main class="superviajes">
         <section class="viajes">
             <div class="viajes__info">
-                <h1 class="viajes__titulo">INFO SOBRE ALGUNOS DESTINOS QUE PUEDE INTERESARTE</h1>
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="viajes__titulo">
+                    INFO SOBRE ALGUNOS DESTINOS QUE PUEDE INTERESARTE</h1>
             </div>
             <div class="viajes__fotos">
                 <ul class="viajes__paises">
-                    <li class="arg"><img src="../imagenes/arg.jpg" alt="Argentina">
+                    <li class="arg">
+                        <img src="../imagenes/arg.jpg" alt="Argentina">
                         <h1>ARG</h1>
+                        <div class="overlay">
+                            <h2> Argentina</h2>
+                            <h5>Sabías que tiene</h5>
+                            <p>
+                                1. El río más ancho del mundo <br>
+                                2. La avenida más ancha del mundo <br>
+                                3. El pico más alto de América <br>
+                                4. La ciudad mas austral del mundo <br>
+                                5. Cinco premios nobel <br>
+                                6. 8vo territorio + grande del mundo <br>
+                                7. Mayor nº de psicólogos por cápita<br>
+                                8. Un historial de 7 Maravillas Naturales</p>
+                        </div>
                     </li>
                     <li id="col"><img src="../imagenes/col.jpg" alt="Colombia">
                         <h1>COL</h1>
+                        <div class="overlay">
+                            <h2> Colombia</h2>
+                            <h5>Sabías que tiene</h5>
+                            <p>
+                                1. 2do territorio con + biodiversidad<br>
+                                2. Un río con 5 colores diferentes <br>
+                                3. Nº1 en exportación de esmeralda<br>
+                                4. La 3ra ciudad más alta del mundo<br>
+                                5. Uno de los snacks más atípicos ¡las hormigas culonas! <br>
+                                6. Único país de Sudamérica con costas en 2 mares: Caribe y Pacífico </p>
+                        </div>
                     </li>
                     <li class="esp"><img src="../imagenes/esp.jpg" alt="España">
                         <h1>ESP</h1>
+                        <div class="overlay">
+                            <h2> España</h2>
+                            <h5>Sabías que tiene</h5>
+                            <p>
+                                1. El nº1 en donación de órganos<br>
+                                2. Tercer país con + número de lugares "Patrimonio Mundial"<br>
+                                3. El único desierto de Europa<br>
+                                4. Un territorio que cambia de nacionalidad cada seis meses<br>
+                                5. + cantidad de viñedos del mundo <br>
+                                6. Una esperanza de vida muy alta <br>
+                                7. El faro activo más antiguo </p>
+                        </div>
                     </li>
                     <li class="ing"><img src="../imagenes/ing.jpg" alt="Inglaterra">
                         <h1>ING</h1>
+                        <div class="overlay">
+                            <h2> Inglaterra</h2>
+                            <h5>Sabías que tiene</h5>
+                            <p>
+                                1. Más de 30 mil John Smith<br>
+                                2. Consumo diario de 165m tazas de té<br>
+                                3. La ciudad + grande de Europa<br>
+                                4. Animales propiedad de la reina<br>
+                                5. Un Jardín de plantas mortales <br>
+                                6. Una estatua de Freddie Mercury de casi 10 metros de altura <br>
+                                7. La alianza + antigua del mundo</p>
+                        </div>
                     </li>
                     <li class="ita"><img src="../imagenes/ita.jpg" alt="Italia">
                         <h1>ITA</h1>
+                        <div class="overlay">
+                            <h2> Italia</h2>
+                            <h5>Sabías que tiene</h5>
+                            <p>
+                                1. La Fontana di Trevi, con una media de €1m en monedas por año<br>
+                                2. La mayor cantidad de patrimonios culturales del mundo <br>
+                                3. El banco más antiguo del mundo<br>
+                                4. El mayor consumo de pasta<br>
+                                5. El Vaticano, único país que cierra sus puertas al anochecer <br>
+                                6. Universidad + antigua de Europa <br>
+                                7. Un apodo? Es el ”Belpaese” </p>
+                        </div>
                     </li>
                     <li class="per"><img src="../imagenes/per.jpg" alt="Peru">
                         <h1>PER</h1>
+                        <div class="overlay">
+                            <h2> Peru</h2>
+                            <h5>Sabías que tiene</h5>
+                            <p>
+                                1. La iglesia más pequeña del mundo<br>
+                                2. Reyes Magos con otros nombres<br>
+                                3. 1800 diferentes especies de aves<br>
+                                4. La mayor diversidad de patatas<br>
+                                5. Aprox. 90 microclimas diferentes<br>
+                                6. Una gastronomía deliciosa<br>
+                                7. El Parque Nacional del Manu, récord mundial de biodiversidad. </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -106,6 +181,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>

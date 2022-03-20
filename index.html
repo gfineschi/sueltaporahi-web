@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -44,12 +45,12 @@
         <section class="van"></section>
         <section>
             <div class="frase">
-                <p class="oracion1">Dicen que un viaje se vive 3 veces <br> <br>
-                <p class="oracion2">al soñarlo <br>
+                <p data-aos="fade-up" data-aos-duration="3000" class="oracion1">Dicen que un viaje se vive 3 veces <br> <br>
+                <p data-aos="fade-up" data-aos-duration="3000" class="oracion2">al soñarlo <br>
                     al vivirlo <br>
                     al recordarlo <br><br>
                 </p>
-                <p class="oracion3">Puedo acompañarte en ese primer momento... <br>
+                <p data-aos="fade-up" data-aos-duration="3000" class="oracion3">Puedo acompañarte en ese primer momento... <br>
                     El sueño es tuyo, contame de qué se trata para que pueda ayudarte a hacerlo realidad</p>
                 </p>
             </div>
@@ -57,11 +58,9 @@
         <section class="cita">
             <figure class="text-center">
                 <blockquote class="blockquote">
-                    <p>"Si piensas que la aventura es peligrosa, prueba la rutina. Es mortal"</p>
+                    <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                        "Si piensas que la aventura es peligrosa, prueba la rutina. Es mortal"</p>
                 </blockquote>
-                <figcaption class="blockquote-footer">
-                    Paulo Coelho
-                </figcaption>
             </figure>
         </section>
 
@@ -100,6 +99,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 
