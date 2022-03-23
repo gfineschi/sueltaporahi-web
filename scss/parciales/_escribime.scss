@@ -1,0 +1,44 @@
+.fondo {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: center; 
+}
+  
+.recuadro {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px; 
+}
+.area {
+    border-color: black;
+    background-color: rgba(227, 219, 231, 0);
+    border-radius: 2px;
+    margin-bottom: 5px;
+    text-decoration: black;
+}
+.back {
+    background-image: url(../imagenes/punti.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.form2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px; 
+}
+.h2 {
+    margin-right: 40px; 
+}
+.tit {
+    margin-right: 40px; 
+}
+.iconos {
+    display: flex; 
+}
+.icons {
+    padding-right: 30px; 
+}

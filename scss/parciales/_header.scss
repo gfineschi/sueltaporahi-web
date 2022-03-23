@@ -1,0 +1,37 @@
+.menu {
+    height: 100px;
+    position: relative; 
+}
+.menu__contenedor {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.menu__marca {
+    height: 100px;
+    width: 100px; 
+}
+  
+.menu__marca img {
+    height: 100%; 
+}
+.nav__lista {
+    display: flex; 
+}
+  
+.nav__item {
+    margin-left: 2.5rem; 
+}
+  
+#nav__enlace {
+    color: #e22e8e;
+    text-decoration: none;
+    letter-spacing: 0.05cm;
+    font-size: 20px; 
+}
+ul {
+    list-style: none; }

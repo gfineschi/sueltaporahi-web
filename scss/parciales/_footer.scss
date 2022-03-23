@@ -1,0 +1,45 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo centro novedades";
+    justify-items: center;
+    align-items: center;
+    height: 120px; 
+}  
+.footer__logo {
+    grid-area: logo;
+    height: 100px;
+    width: 100px; 
+}
+  
+.footer__logo img {
+    height: 100%; 
+}
+  
+.footer__centro {
+    grid-area: centro;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+  
+.footer__novedades {
+    grid-area: novedades; 
+}
+#giu {
+    margin-bottom: 0px; 
+}
+.novedades {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    margin-bottom: 0px; 
+}
+.suscribite {
+    width: 130px;
+    border-style: unset;
+    height: 22px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+  

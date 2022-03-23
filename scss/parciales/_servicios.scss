@@ -1,0 +1,128 @@
+.servicios__paquetes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "uno vht"
+   "dos itinerario"
+   "tres full";
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 50px; 
+}
+.servicios__fondo {
+    background-image: url(../imagenes/girl.jpg);
+    width: 100%;
+    height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.servicios__charlemos {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%; 
+}
+.vht {
+    grid-area: vht; 
+}
+.uno {
+    grid-area: uno;
+    text-align: right; 
+}
+  
+.uno p {
+    font-size: 22px;
+    color: antiquewhite; 
+}
+  
+.uno h1 {
+    font-size: 60px;
+    letter-spacing: 0.3cm;
+    color: rgba(238, 154, 28, 0.76); 
+}
+.itinerario {
+    grid-area: itinerario; 
+}
+  
+.full {
+    grid-area: full; 
+}
+  
+.dos {
+    grid-area: dos;
+    text-align: right; 
+}
+  
+.dos p {
+    font-size: 22px;
+    color: antiquewhite; 
+}
+  
+.dos h1 {
+    font-size: 60px;
+    letter-spacing: 0.3cm;
+    color: rgba(229, 153, 229, 0.767); 
+}
+.tres {
+    grid-area: tres;
+    text-align: right; 
+}
+  
+.tres p {
+    font-size: 22px;
+    color: antiquewhite; 
+}
+  
+.tres h1 {
+    font-size: 60px;
+    letter-spacing: 0.3cm;
+    color: rgba(255, 192, 203, 0.76); 
+}
+  
+  
+.charlemos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px; 
+}
+  
+.charlemos h2 {
+    font-size: 42px;
+    letter-spacing: 0.2cm;
+    padding-bottom: 40px; 
+}
+  
+.charlemos h3 {
+    font-size: 30px;
+    letter-spacing: 0.15cm;
+    padding-bottom: 20px; 
+}
+  
+.form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: left; 
+}
+.form__row {
+    display: flex; 
+}
+      
+.form__boton {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 30px; 
+}
+.cita2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: $miVariable; 
+}
+  

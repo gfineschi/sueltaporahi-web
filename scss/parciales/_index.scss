@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+  
+body {
+    font-family: 'Bebas Neue', cursive; 
+}
+.van {
+    background-image: url(../imagenes/camio.jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+  
+.frase {
+    text-align: center;
+    line-height: 1.4;
+    background-color: #cbccc3;
+    padding: 40px; 
+}
+  
+.oracion1 {
+    font-size: 30px;
+    letter-spacing: 5px; 
+}
+  
+.oracion2 {
+    text-decoration: overline;
+    font-size: 60px; 
+}
+  
+.oracion3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #bd4283; 
+}
+.cita {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: $miVariable; 
+}

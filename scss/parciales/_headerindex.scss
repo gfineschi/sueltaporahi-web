@@ -1,0 +1,29 @@
+.header {
+    height: 0px; 
+}
+  
+.header__logo {
+    height: 160px;
+    width: 160px; 
+}
+  
+.header__logo img {
+    height: 100%; 
+}
+.fila {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center; 
+}
+  
+#link {
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 1.5; 
+}

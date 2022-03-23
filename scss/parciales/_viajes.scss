@@ -1,0 +1,190 @@
+.viajes__paises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-left: 0px; 
+}
+.viajes__fotos {
+    margin-top: 40px;
+    margin-bottom: 20px; 
+}
+  
+.viajes__info {
+    padding: 20px; 
+}
+  
+.viajes__titulo {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.1cm;
+    font-size: 30px; 
+}
+  
+.viajes__paises h1 {
+    text-align: center; 
+}
+.arg:hover .overlay {
+    opacity: 1; 
+}
+  
+#col:hover .overlay {
+    opacity: 1; 
+}
+  
+.ita:hover .overlay {
+    opacity: 1; 
+}
+  
+.ing:hover .overlay {
+    opacity: 1; 
+}
+  
+.per:hover .overlay {
+    opacity: 1; 
+}
+  
+.esp:hover .overlay {
+    opacity: 1; 
+}
+  
+.arg {
+    grid-area: arg;
+    justify-self: end;
+    position: relative;
+    padding-bottom: 40px; 
+}
+  
+.arg h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm; 
+}
+  
+#col {
+    grid-area: col;
+    position: relative;
+    padding-bottom: 40px; 
+}
+  
+#col h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm; 
+}
+  
+.esp {
+    grid-area: esp;
+    justify-self: start;
+    position: relative;
+    padding-bottom: 40px; 
+}
+  
+.esp h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm; 
+}
+  
+.ing {
+    grid-area: ing;
+    justify-self: end;
+    position: relative;
+    padding-bottom: 40px; 
+}
+  
+.ing h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm; 
+}
+  
+.ita {
+    grid-area: ita;
+    position: relative;
+    padding-bottom: 40px; 
+}
+  
+.ita h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm; 
+}
+  
+.per {
+    grid-area: per;
+    justify-self: start;
+    position: relative;
+    padding-bottom: 40px; 
+}
+  
+.per h1 {
+    position: absolute;
+    color: rgba(240, 255, 255, 0.829);
+    width: 100%;
+    font-size: 100px;
+    cursor: pointer;
+    top: 40%;
+    letter-spacing: 0.1cm; 
+}
+  
+.overlay {
+    background-color: rgba(253, 249, 243, 0.808);
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0%, -100%);
+    transition: 0.5s ease;
+    position: relative; 
+}
+  
+.overlay h2 {
+    text-decoration: underline;
+    font-size: 1.2 rem;
+    text-align: center;
+    color: #e22e8e;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+  
+.overlay h5 {
+    font-size: 1 rem;
+    text-align: center;
+    color: $miVariable;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+  
+.overlay p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
