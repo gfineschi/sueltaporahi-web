@@ -3,3 +3,42 @@ $tipografia: 'Bebas Neue', cursive;
 $color: antiquewhite;
 $colores:  #e22e8e;
 
+@mixin sizes($max-width, $height, $padding) {
+    max-width: $max-width;
+    height: $height;
+    padding: $padding;
+}
+
+.menu__contenedor {
+    @include sizes(1200px, 100%, 1rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+@mixin flex-column-center-center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.fila {
+    @include flex-column-center-center;
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@mixin background ($background-size, $background-repeat) {
+    background-size: $background-size;
+    background-repeat: $background-repeat;
+}
+.back {
+    @include background(cover, no-repeat);
+    background-image: url(../imagenes/punti.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
